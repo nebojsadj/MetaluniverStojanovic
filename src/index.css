@@ -1,0 +1,115 @@
+body {
+    /* background-color: rgba(5, 103, 250, 0.863); */
+    background-color: rgba(41, 71, 116, 0.863);
+    /* margin: 0; */
+    /* opacity: 0.9; */
+    /* background-image: linear-gradient(rgba(22, 60, 184, 0.945), white, blue); */
+}
+
+.bg {
+    background-color: rgba(65, 94, 138, 0.863);
+}
+
+.sp {
+    color: rgba(23, 38, 59, 0.863);
+}
+
+.active {
+    border-bottom: 1px solid red;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+.carousel-item img {
+    /* width: 60vmax; */
+    height: 25vmax;
+}
+
+.margine {
+    margin: 0 auto !important;
+}
+
+.footer {
+    list-style: none;
+    color: white;
+}
+
+.footer:hover {
+    cursor: pointer;
+}
+
+.footerLista {
+    width: 330px;
+    height: 180px;
+    border: 1px solid none;
+    margin: auto;
+}
+
+hr {
+    border: 1px solid rgb(110, 108, 108);
+}
+
+.copy {
+    font-size: small;
+    text-align: center;
+}
+
+.podLogo {
+    margin-left: 45%;
+}
+
+.logoMargin {
+    margin: 0 auto !important;
+}
+
+.hover:hover {
+    border: 3px solid transparent;
+    opacity: 0.7;
+}
+
+.objFit {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.iframe {
+    height: 250px;
+    margin-top: 5%;
+}
+
+.kontaktIkonice:hover {
+    cursor: pointer;
+}
+
+.pSize {
+    font-size: larger;
+}
+
+.tel {
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid none;
+    background-color: rgba(40, 66, 102, 0.863);
+    color: white;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.btns {
+    /* font-family: Raleway-SemiBold; */
+    /* font-size: 13px; */
+    /* color: rgba(101, 175, 231, 0.75); */
+    /* letter-spacing: 1px; */
+    /* line-height: 15px; */
+    /* border: 2px solid rgba(58, 133, 191, 0.75); */
+    border-radius: 50%;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
