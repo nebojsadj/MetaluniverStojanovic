@@ -15,7 +15,7 @@ function Footer({ lang }) {
             </li>
             <li className="mt-2">
               <a
-                href="https://www.metaluniverstojanovic@gmail.com"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMScbVRMHWRzThKtZqRxgtgNNhSrNctkkxQDcwpFPtxPQPhhsvXKXpXTrcQJqmfwWrLVfsq"
                 target="blanc"
               >
                 <FaEnvelope
