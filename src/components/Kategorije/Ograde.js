@@ -26,12 +26,12 @@ import img24 from "../../pict/ogradeKapije/24.png";
 import img25 from "../../pict/ogradeKapije/25.jpg";
 import img26 from "../../pict/ogradeKapije/26.jpg";
 
-function Ograde() {
+function Ograde({ lang }) {
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-8 offset-2">
-          <h3 className="text-center text-light">Ograde i kapije</h3>
+          <h3 className="text-center text-light">{lang.ogradeKapije}</h3>
           <div className="row mt-4">
             <div className="col-6 mt-4">
               <img className="objFit" src={img1} alt="img1" />

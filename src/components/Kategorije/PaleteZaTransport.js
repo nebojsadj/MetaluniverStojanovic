@@ -3,12 +3,12 @@ import img1 from "../../pict/paleteZaTransport/1.jpg";
 import img2 from "../../pict/paleteZaTransport/2.png";
 import img3 from "../../pict/paleteZaTransport/3.jpg";
 
-function PaleteZaTransport() {
+function PaleteZaTransport({ lang }) {
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-8 offset-2">
-          <h3 className="text-center text-light">Palete za transport</h3>
+          <h3 className="text-center text-light">{lang.palete}</h3>
           <div className="row mt-4">
             <div className="col-6 mt-4">
               <img className="objFit" src={img1} alt="img1" />

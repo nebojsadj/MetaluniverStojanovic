@@ -22,12 +22,12 @@ import img20 from "../../pict/metalnaGalanterija/20.jpg";
 import img21 from "../../pict/metalnaGalanterija/21.jpg";
 import img22 from "../../pict/metalnaGalanterija/22.jpg";
 
-function Galanterija() {
+function Galanterija({ lang }) {
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-8 offset-2">
-          <h3 className="text-center text-light">Metalna galanterija</h3>
+          <h3 className="text-center text-light">{lang.galanterija}</h3>
           <div className="row mt-4">
             <div className="col-6 mt-4">
               <img className="objFit" src={img1} alt="img1" />

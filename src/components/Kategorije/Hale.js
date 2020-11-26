@@ -18,12 +18,12 @@ import img16 from "../../pict/hale/16.jpg";
 import img17 from "../../pict/hale/17.jpg";
 import img18 from "../../pict/hale/18.jpg";
 
-function Hale() {
+function Hale({ lang }) {
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-8 offset-2">
-          <h3 className="text-center text-light">Hale</h3>
+          <h3 className="text-center text-light">{lang.hale}</h3>
           <div className="row mt-4">
             <div className="col-6 mt-4">
               <img className="objFit" src={img1} alt="img1" />

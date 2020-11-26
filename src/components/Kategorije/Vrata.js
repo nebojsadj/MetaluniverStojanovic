@@ -6,12 +6,12 @@ import img4 from "../../pict/garaznaVrata/4.jpg";
 import img5 from "../../pict/garaznaVrata/5.png";
 import img6 from "../../pict/garaznaVrata/6.png";
 
-function Vrata() {
+function Vrata({ lang }) {
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-8 offset-2">
-          <h3 className="text-center text-light">Garazna vrata</h3>
+          <h3 className="text-center text-light">{lang.garaznaVrata}</h3>
           <div className="row mt-4">
             <div className="col-6 mt-4">
               <img className="objFit" src={img1} alt="img1" />

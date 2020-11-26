@@ -8,12 +8,12 @@ import img6 from "../../pict/visecaKliznaVrata/6.jpg";
 import img7 from "../../pict/visecaKliznaVrata/7.jpg";
 import img8 from "../../pict/visecaKliznaVrata/8.jpg";
 
-function VisecaKliznaVrata() {
+function VisecaKliznaVrata({ lang }) {
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-8 offset-2">
-          <h3 className="text-center text-light">Viseca i klizna vrata</h3>
+          <h3 className="text-center text-light">{lang.visecaKliznaVrata}</h3>
           <div className="row mt-4">
             <div className="col-6 mt-4">
               <img className="objFit" src={img1} alt="img1" />

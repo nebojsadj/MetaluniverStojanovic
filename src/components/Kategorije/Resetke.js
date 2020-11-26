@@ -18,12 +18,12 @@ import img16 from "../../pict/zastitneResetke/16.jpg";
 import img17 from "../../pict/zastitneResetke/17.jpg";
 import img18 from "../../pict/zastitneResetke/18.png";
 
-function Resetke() {
+function Resetke({ lang }) {
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-8 offset-2">
-          <h3 className="text-center text-light">Zastitne resetke</h3>
+          <h3 className="text-center text-light">{lang.zastitneResetke}</h3>
           <div className="row mt-4">
             <div className="col-6 mt-4">
               <img className="objFit" src={img1} alt="img1" />

@@ -12,12 +12,12 @@ import img10 from "../../pict/nadstresnice/10.jpg";
 import img11 from "../../pict/nadstresnice/11.jpg";
 import img12 from "../../pict/nadstresnice/12.jpg";
 
-function Nadstresnice() {
+function Nadstresnice({ lang }) {
   return (
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-8 offset-2">
-          <h3 className="text-center text-light">Nadstresnice</h3>
+          <h3 className="text-center text-light">{lang.nadstresnice}</h3>
           <div className="row mt-4">
             <div className="col-6 mt-4">
               <img className="objFit" src={img1} alt="img1" />
