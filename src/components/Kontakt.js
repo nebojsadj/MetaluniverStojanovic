@@ -1,7 +1,6 @@
 import React from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaEnvelope, FaViber, FaInstagram } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import KontaktForma from "./KontaktForma";
 import Mapa from "./Mapa";
 
@@ -26,24 +25,28 @@ function Kontakt({ lang }) {
             </div>
             <div className="col-10 offset-1 text-light text-center mt-4">
               <span className="kontaktIkonice">
-                <Link to="/">
+                <a href="https://www.facebook.com/Metaluniver" target="blanc">
                   <AiFillFacebook size="3em" color="white" />
-                </Link>
+                </a>
+              </span>
+              <span className="ml-3">
+                <FaViber size="2.7em" color="white" />
               </span>
               <span className="kontaktIkonice ml-3">
-                <Link to="/">
-                  <FaViber size="2.7em" color="white" />
-                </Link>
-              </span>
-              <span className="kontaktIkonice ml-3">
-                <Link to="/">
+                <a
+                  href="https://www.instagram.com/metaluniver_stojanovic"
+                  target="blanc"
+                >
                   <FaInstagram size="2.8em" color="white" />
-                </Link>
+                </a>
               </span>
               <span className="kontaktIkonice ml-3">
-                <Link to="/">
+                <a
+                  href="https://www.metaluniverstojanovic@gmail.com"
+                  target="blanc"
+                >
                   <FaEnvelope size="2.8em" color="white" />
-                </Link>
+                </a>
               </span>
             </div>
             <hr />

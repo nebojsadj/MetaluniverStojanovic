@@ -1,9 +1,5 @@
 body {
-    /* background-color: rgba(5, 103, 250, 0.863); */
     background-color: rgba(41, 71, 116, 0.863);
-    /* margin: 0; */
-    /* opacity: 0.9; */
-    /* background-image: linear-gradient(rgba(22, 60, 184, 0.945), white, blue); */
 }
 
 .bg {
@@ -24,7 +20,6 @@ a:hover {
 }
 
 .carousel-item img {
-    /* width: 60vmax; */
     height: 25vmax;
 }
 
@@ -37,7 +32,7 @@ a:hover {
     color: white;
 }
 
-.footer:hover {
+.social:hover {
     cursor: pointer;
 }
 
@@ -103,13 +98,8 @@ hr {
 }
 
 .btns {
-    /* font-family: Raleway-SemiBold; */
-    /* font-size: 13px; */
-    /* color: rgba(101, 175, 231, 0.75); */
-    /* letter-spacing: 1px; */
-    /* line-height: 15px; */
-    /* border: 2px solid rgba(58, 133, 191, 0.75); */
     border-radius: 50%;
     background: transparent;
     transition: all 0.3s ease 0s;
+    margin-bottom: 3px;
 }
