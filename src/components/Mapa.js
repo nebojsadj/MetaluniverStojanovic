@@ -5,7 +5,7 @@ function Mapa() {
     width="100%"
     height="100%"
     scrolling="no"
-    src="https://maps.google.com?saddr=Radomira Jankovica 10, 11311 Radinac&z=12&output=embed"
+    src="https://maps.google.com?saddr=Radomira Jankovica 35/1, 11311 Radinac&z=12&output=embed"
     width="500"
   ></iframe>
   `;

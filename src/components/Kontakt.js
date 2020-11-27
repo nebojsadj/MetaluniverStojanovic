@@ -15,12 +15,18 @@ function Kontakt({ lang }) {
               <h4 className="mt-4 text text-uppercase">{lang.odgovoriti}</h4>
               <hr />
               <ul className="list-group list-group-flush text-center mt-5 pSize">
-                <li className="list-group-item bg">{lang._adresa}</li>
                 <li className="list-group-item bg">
-                  Mob: (+381) 064/24-87-845
+                  <h5>{lang._adresa}</h5>
                 </li>
-                <li className="list-group-item bg">{lang._tel}</li>
-                <li className="list-group-item bg">{lang._email}</li>
+                <li className="list-group-item bg">
+                  <h5> Mob: (+381) 64/24-87-845</h5>
+                </li>
+                <li className="list-group-item bg">
+                  <h5>{lang._tel}</h5>
+                </li>
+                <li className="list-group-item bg">
+                  <h5>{lang._email}</h5>
+                </li>
               </ul>
             </div>
             <div className="col-10 offset-1 text-light text-center mt-4">

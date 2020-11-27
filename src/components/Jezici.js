@@ -40,8 +40,8 @@ export const langSR = {
     boksevi: "Boksevi za pse",
     odgovoriti: "Rado ćemo odgovoriti na svaki Vaš upit. Kontaktirajte nas putem telefona ili bilo kojim od ponuđenih načina.",
     _adresa: "Adresa: Radomira Jankovica 35/1, Radinac-Smederevo",
-    _mob: "Mob: (+381) 064/24-87-845",
-    _tel: "Tel: (+381) 026/701-923",
+    _mob: "Mob: (+381) 64/24-87-845",
+    _tel: "Tel: (+381) 26/701-923",
     _email: "E-mail: metaluniverstojanovic@gmail.com",
     unikat: "Želite li unikatni proizvod?",
     _kontakt: "Kontaktirajte nas i mi ćemo pokušati da odgovorimo na vaše zahteve.",
@@ -49,6 +49,7 @@ export const langSR = {
     vasEmail: "Vaš e-mail",
     vasaPoruka: "Vaša poruka",
     posaljite: "Pošaljite",
+    poslato: "Poruka je uspešno poslata!",
 };
 
 export const langEN = {
@@ -93,8 +94,8 @@ export const langEN = {
     boksevi: "Boxes for dogs",
     odgovoriti: "We will be happy to answer any of your questions. Contact us by phone or any of the methods offered.",
     _adresa: "Address: Radomira Jankovica 35/1, Radinac-Smederevo",
-    _mob: "Mob: (+381) 064/24-87-845",
-    _tel: "Phone: (+381) 026/701-923",
+    _mob: "Mob: (+381) 64/24-87-845",
+    _tel: "Phone: (+381) 26/701-923",
     _email: "E-mail: metaluniverstojanovic@gmail.com",
     unikat: "Do you want a unique product?",
     _kontakt: "Contact us and we will do our best to answer all your requests.",
@@ -102,6 +103,7 @@ export const langEN = {
     vasEmail: "Your email",
     vasaPoruka: "Your message",
     posaljite: "Send",
+    poslato: "Message sent successfully!",
 };
 
 export const langFR = {
@@ -146,8 +148,8 @@ export const langFR = {
     boksevi: "Cage pour chien",
     odgovoriti: "Nous serons ravis de répondre à toutes vos questions. Contactez-nous par téléphone ou par l'une des méthodes proposées.",
     _adresa: "Adresse: Radomira Jankovića 35/1, Radinac-Smederevo",
-    _mob: "Mob: (+381) 064/24-87-845",
-    _tel: "Télé: (+381) 026/701-923",
+    _mob: "Mob: (+381) 64/24-87-845",
+    _tel: "Télé: (+381) 26/701-923",
     _email: "E-mail: metaluniverstojanovic@gmail.com",
     unikat: "Voulez-vous un produit unique?",
     _kontakt: "Contactez-nous et nous essaierons de répondre à vos demandes.",
@@ -155,4 +157,5 @@ export const langFR = {
     vasEmail: "Votre e-mail",
     vasaPoruka: "Votre message",
     posaljite: "Envoyer",
+    poslato: "Message envoyé avec succès!",
 };

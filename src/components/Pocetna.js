@@ -10,8 +10,8 @@ function Pocetna({ lang }) {
       <h1 className="text-center text-light">Metaluniver Stojanovic</h1>
       <div className="row">
         <div className="col-10 offset-1">
-          <h3 className="text-center text-light">{lang.podnaslov}</h3>
-          <h4 className="tel">(+381) 064/24-87-845</h4>
+          <h2 className="text-center text-light">{lang.podnaslov}</h2>
+          {/* <h4 className="tel">(+381) 064/24-87-845</h4> */}
         </div>
       </div>
       <div className="row mt-5">

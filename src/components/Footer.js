@@ -11,7 +11,7 @@ function Footer({ lang }) {
           <ul className="footer">
             <li className="mt-4">
               <FiPhoneCall size="1.4em" color="cornflowerblue" />
-              <span className="ml-2">+381-64/24-87-845</span>
+              <span className="ml-2">(+381) 64/24-87-845</span>
             </li>
             <li className="mt-2">
               <a

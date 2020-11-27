@@ -103,3 +103,7 @@ hr {
     transition: all 0.3s ease 0s;
     margin-bottom: 3px;
 }
+
+.red {
+    border: 2px solid red !important;
+}
