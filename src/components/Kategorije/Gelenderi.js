@@ -30,12 +30,9 @@ import img25 from "../../pict/gelenderi/25.jpg";
 function Gelenderi({ lang }) {
   const [lgShow, setLgShow] = useState(false);
   const [index, setIndex] = useState(0);
-  const handleSelect = () => {
-    if (index === imgs.length - 1) {
-      setIndex(0);
-      setLgShow(false);
-    }
-    setIndex((index) => index + 1);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
   };
 
   const imgs = [
@@ -101,19 +98,28 @@ function Gelenderi({ lang }) {
           onSelect={handleSelect}
           touch={true}
           fade={true}
-          prevIcon={<span aria-hidden="false" />}
+          prevIcon={
+            <span
+              aria-hidden="true"
+              className="carousel-control-prev-icon carouselControl"
+            />
+          }
+          nextIcon={
+            <span
+              aria-hidden="true"
+              className="carousel-control-next-icon carouselControl"
+            />
+          }
         >
           {imgs.map((el) => (
             <Carousel.Item key={el}>
-              <img
-                style={{
-                  width: "100%",
-                  height: "100%",
-                }}
-                className="objFit kontaktIkonice"
-                src={el}
-                alt={el}
-              />
+              <div className="container">
+                <div className="row">
+                  <div className="col-12">
+                    <img className="d-block w-100 carousel" src={el} alt={el} />
+                  </div>
+                </div>
+              </div>
             </Carousel.Item>
           ))}
         </Carousel>

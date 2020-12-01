@@ -18,13 +18,13 @@ function Pocetna({ lang }) {
         <div className="col-10 offset-1">
           <Carousel>
             <Carousel.Item interval={1000}>
-              <img className="d-block w-100" src={img1} alt="First slide" />
+              <img className="d-block w-100" src={img1} alt="img1" />
             </Carousel.Item>
             <Carousel.Item interval={1000}>
-              <img className="d-block w-100" src={img3} alt="Third slide" />
+              <img className="d-block w-100" src={img3} alt="img2" />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-100" src={img2} alt="Third slide" />
+              <img className="d-block w-100" src={img2} alt="img3" />
             </Carousel.Item>
           </Carousel>
         </div>
