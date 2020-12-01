@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
+import { Carousel } from "react-bootstrap";
 import img1 from "../../pict/paleteZaTransport/1.jpg";
 import img2 from "../../pict/paleteZaTransport/2.png";
 import img3 from "../../pict/paleteZaTransport/3.jpg";
 
 function PaleteZaTransport({ lang }) {
   const [lgShow, setLgShow] = useState(false);
-  const [img, setImg] = useState(null);
+  const [index, setIndex] = useState(0);
+  const handleSelect = () => {
+    if (index === imgs.length - 1) {
+      setIndex(0);
+      setLgShow(false);
+    }
+    setIndex((index) => index + 1);
+  };
+
+  const imgs = [img1, img2, img3];
 
   return (
     <div className="container mt-5 mb-5">
@@ -14,39 +24,19 @@ function PaleteZaTransport({ lang }) {
         <div className="col-8 offset-2">
           <h3 className="text-center text-light">{lang.palete}</h3>
           <div className="row mt-4">
-            <div className="col-6 mt-4">
-              <img
-                onClick={() => {
-                  setLgShow(true);
-                  setImg(img1);
-                }}
-                className="objFit kontaktIkonice"
-                src={img1}
-                alt="img1"
-              />
-            </div>
-            <div className="col-6 mt-4">
-              <img
-                onClick={() => {
-                  setLgShow(true);
-                  setImg(img2);
-                }}
-                className="objFit kontaktIkonice"
-                src={img2}
-                alt="img2"
-              />
-            </div>
-            <div className="col-6 mt-4">
-              <img
-                onClick={() => {
-                  setLgShow(true);
-                  setImg(img3);
-                }}
-                className="objFit kontaktIkonice"
-                src={img3}
-                alt="img3"
-              />
-            </div>
+            {imgs.map((el, i) => (
+              <div className="col-6 mt-4" key={i}>
+                <img
+                  onClick={() => {
+                    setLgShow(true);
+                    setIndex(i);
+                  }}
+                  className="objFit kontaktIkonice"
+                  src={el}
+                  alt={el}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -58,16 +48,27 @@ function PaleteZaTransport({ lang }) {
         centered
       >
         <Modal.Header closeButton></Modal.Header>
-        <Modal.Body>
-          <img
-            style={{
-              width: "100%",
-              height: "100%",
-            }}
-            src={img}
-            alt="imgModal"
-          />
-        </Modal.Body>
+        <Carousel
+          activeIndex={index}
+          onSelect={handleSelect}
+          touch={true}
+          fade={true}
+          prevIcon={<span aria-hidden="false" />}
+        >
+          {imgs.map((el) => (
+            <Carousel.Item key={el}>
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+                className="objFit kontaktIkonice"
+                src={el}
+                alt={el}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </Modal>
     </div>
   );
