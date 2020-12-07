@@ -13,16 +13,16 @@ function Header({ lang }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <NavLink to="/" exact className="d-inline p-2 text-light ">
+            <NavLink to="/" exact className="d-inline p-2 text-light nav">
               {lang.navPocetna}
             </NavLink>
-            <NavLink to="/onama" className="d-inline p-2 text-light">
+            <NavLink to="/onama" className="d-inline p-2 text-light nav">
               {lang.navOnama}
             </NavLink>
-            <NavLink to="/proizvodi" className="d-inline p-2 text-light">
+            <NavLink to="/proizvodi" className="d-inline p-2 text-light nav">
               {lang.navProizvodi}
             </NavLink>
-            <NavLink to="/kontakt" className="d-inline p-2 text-light">
+            <NavLink to="/kontakt" className="d-inline p-2 text-light nav">
               {lang.navKontakt}
             </NavLink>
           </Nav>

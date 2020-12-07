@@ -120,3 +120,11 @@ hr {
     border-radius: 50%;
     background-color: rgba(26, 46, 73, 0.863) !important;
 }
+
+.nav {
+    text-decoration: none !important;
+}
+
+.prLink {
+    text-decoration: none;
+}

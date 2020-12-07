@@ -55,7 +55,6 @@ function Kontakt({ lang }) {
                 </a>
               </span>
             </div>
-            <hr />
           </div>
           <div className="row mt-4">
             <Mapa />

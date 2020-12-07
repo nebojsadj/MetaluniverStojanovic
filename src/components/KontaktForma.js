@@ -19,7 +19,7 @@ function KontaktForma({ lang }) {
 
     setTimeout(function () {
       setSuccess("");
-    }, 5000);
+    }, 6000);
   };
 
   const onSubmit = () => {
@@ -53,9 +53,8 @@ function KontaktForma({ lang }) {
       <div className="row">
         <div className="col-8 offset-2">
           <form className="contact-form" onSubmit={sendEmail}>
-            <input type="hidden" name="contact_number" />
-            <br />
             <input
+              autoComplete="off"
               onChange={(e) => setValid({ ...valid, name: e.target.value })}
               className={
                 (name === check && "form-control red") || "form-control"
@@ -67,6 +66,7 @@ function KontaktForma({ lang }) {
             />
             <br />
             <input
+              autoComplete="off"
               onChange={(e) => setValid({ ...valid, email: e.target.value })}
               className={
                 (email === check && "form-control red") || "form-control"
