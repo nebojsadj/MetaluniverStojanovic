@@ -23,7 +23,7 @@ import Sahte from "./components/Kategorije/Sahte";
 import { langSR } from "./components/Jezici";
 import { langEN } from "./components/Jezici";
 import { langFR } from "./components/Jezici";
-import ScrollToTop from "./components/ScrollToTop";
+import SkrolujNaVrh from "./components/SkrolujNaVrh";
 
 function App() {
   const [language, setLanguage] = useState(langSR);
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <ScrollToTop />
+      <SkrolujNaVrh />
       <div className="container-fluid bg-dark">
         <div className="row">
           <div className="col-12 mb-1">
