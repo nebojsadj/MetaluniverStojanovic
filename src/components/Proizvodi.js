@@ -27,7 +27,7 @@ function Proizvodi({ lang }) {
               <img className="objFit" src={kapije} alt="ogradeKapije" />
             </Link>
             <Link to="/garaznaVrata" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center">{lang.garaznaVrata}</h4>
+              <h4 className="text-light text-center">{lang.garaznaVrata} </h4>
               <img className="objFit" src={vrata} alt="garaznaVrata" />
             </Link>
             <Link to="/stepenista" className="col-6 mt-4 hover prLink">
@@ -85,7 +85,10 @@ function Proizvodi({ lang }) {
       </div>
       <div className="row">
         <div className="col-6 offset-3">
-          <Link to="/kontakt" className="btn btn-dark mt-4 form-control">
+          <Link
+            to="/kontakt"
+            className="btn btn-dark mt-4 form-control kontHov"
+          >
             <h5>{lang.kontaktirajteNas}</h5>
           </Link>
         </div>

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaEnvelope, FaViber, FaInstagram } from "react-icons/fa";
 import KontaktForma from "./KontaktForma";
 import Mapa from "./Mapa";
+import { Overlay, Tooltip } from "react-bootstrap";
 
 function Kontakt({ lang }) {
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
+
   return (
     <div className="container mt-5">
       <div className="row">
@@ -35,8 +39,19 @@ function Kontakt({ lang }) {
                   <AiFillFacebook size="3em" color="white" />
                 </a>
               </span>
-              <span className="ml-3">
+              <span
+                className="kontaktIkonice ml-3"
+                ref={target}
+                onClick={() => setShow(!show)}
+              >
                 <FaViber size="2.7em" color="white" />
+                <Overlay target={target.current} show={show} placement="bottom">
+                  {(props) => (
+                    <Tooltip id="overlay-example" {...props}>
+                      (+381) 64/24-87-845
+                    </Tooltip>
+                  )}
+                </Overlay>
               </span>
               <span className="kontaktIkonice ml-3">
                 <a
@@ -48,7 +63,7 @@ function Kontakt({ lang }) {
               </span>
               <span className="kontaktIkonice ml-3">
                 <a
-                  href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMScbVRMHWRzThKtZqRxgtgNNhSrNctkkxQDcwpFPtxPQPhhsvXKXpXTrcQJqmfwWrLVfsq"
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=new"
                   target="blanc"
                 >
                   <FaEnvelope size="2.8em" color="white" />

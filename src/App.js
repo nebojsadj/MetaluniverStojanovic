@@ -37,7 +37,7 @@ function App() {
       <ScrollToTop />
       <div className="container-fluid bg-dark">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 mb-1">
             <button
               onClick={() => changeLanguage(langFR)}
               className="btn btn-outline-light btn-sm mt-3 ml-2 float-right btns"

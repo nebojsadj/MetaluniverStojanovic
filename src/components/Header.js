@@ -8,7 +8,7 @@ function Header({ lang }) {
     <>
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
         <Navbar.Brand href="/">
-          <img src={logo} alt="" className="mt-3" width="120%" />
+          <img src={logo} alt="logo" className="mt-3 ml-1" width="120%" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

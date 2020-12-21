@@ -61,8 +61,9 @@ hr {
 }
 
 .hover:hover {
-    border: 3px solid transparent;
+    /* border: 1px solid transparent; */
     opacity: 0.7;
+    color: red;
 }
 
 .objFit {
@@ -127,4 +128,8 @@ hr {
 
 .prLink {
     text-decoration: none;
+}
+
+.kontHov:hover {
+    background-color: rgb(28, 28, 28) !important;
 }

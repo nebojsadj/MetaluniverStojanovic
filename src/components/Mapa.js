@@ -6,9 +6,7 @@ function Mapa() {
     height="100%"
     scrolling="no"
     src="https://maps.google.com?saddr=Radomira Jankovica 35/1, 11311 Radinac&z=12&output=embed"
-    width="500"
-  ></iframe>
-  `;
+    width="500"></iframe>`;
   return (
     <div
       className="col-8 offset-2 iframe"

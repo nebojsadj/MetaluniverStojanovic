@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaEnvelope, FaViber, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Overlay, Tooltip } from "react-bootstrap";
 
 function Onama({ lang }) {
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
+
   return (
     <div className="container">
       <div className="row">
@@ -20,8 +24,19 @@ function Onama({ lang }) {
               <AiFillFacebook size="3em" color="white" />
             </a>
           </span>
-          <span className="ml-3">
+          <span
+            className="kontaktIkonice ml-3"
+            ref={target}
+            onClick={() => setShow(!show)}
+          >
             <FaViber size="2.7em" color="white" />
+            <Overlay target={target.current} show={show} placement="bottom">
+              {(props) => (
+                <Tooltip id="overlay-example" {...props}>
+                  (+381) 64/24-87-845
+                </Tooltip>
+              )}
+            </Overlay>
           </span>
           <span className="kontaktIkonice ml-3">
             <a
@@ -33,7 +48,7 @@ function Onama({ lang }) {
           </span>
           <span className="kontaktIkonice ml-3">
             <a
-              href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMScbVRMHWRzThKtZqRxgtgNNhSrNctkkxQDcwpFPtxPQPhhsvXKXpXTrcQJqmfwWrLVfsq"
+              href="https://mail.google.com/mail/u/0/#inbox?compose=new"
               target="blanc"
             >
               <FaEnvelope size="2.8em" color="white" />
@@ -92,7 +107,10 @@ function Onama({ lang }) {
       </div>
       <div className="row mb-5">
         <div className="col-6 offset-3">
-          <Link to="/kontakt" className="btn btn-dark mt-4 form-control">
+          <Link
+            to="/kontakt"
+            className="btn btn-dark mt-4 form-control kontHov"
+          >
             <h5>{lang.kontaktirajteNas}</h5>
           </Link>
         </div>

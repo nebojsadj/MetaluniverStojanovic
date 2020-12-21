@@ -96,7 +96,7 @@ function KontaktForma({ lang }) {
             />
             <br />
           </form>
-          <h3 className="text-success text-center mt-3">{success}</h3>
+          <h3 className="text-white text-center mt-3">{success}</h3>
         </div>
       </div>
     </div>
