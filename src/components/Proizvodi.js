@@ -24,11 +24,11 @@ function Proizvodi({ lang }) {
           <div className="row mt-4">
             <Link to="/ogradeIkapije" className="col-6 mt-4 hover prLink">
               <h4 className="text-light text-center">{lang.ogradeKapije}</h4>
-              <img className="objFit" src={kapije} alt="ogradeKapije" />
+              <img className="objFit" src={kapije} alt="kapije" />
             </Link>
             <Link to="/garaznaVrata" className="col-6 mt-4 hover prLink">
               <h4 className="text-light text-center">{lang.garaznaVrata} </h4>
-              <img className="objFit" src={vrata} alt="garaznaVrata" />
+              <img className="objFit" src={vrata} alt="vrata" />
             </Link>
             <Link to="/stepenista" className="col-6 mt-4 hover prLink">
               <h4 className="text-light text-center">{lang.stepenista}</h4>
@@ -44,7 +44,7 @@ function Proizvodi({ lang }) {
             </Link>
             <Link to="/hale" className="col-6 mt-4 hover prLink">
               <h4 className="text-light text-center">{lang.hale}</h4>
-              <img className="objFit" src={hale} alt="metalneHale" />
+              <img className="objFit" src={hale} alt="hale" />
             </Link>
             <Link to="/zastitneResetke" className="col-6 mt-4 hover prLink">
               <h4 className="text-light text-center">{lang.zastitneResetke}</h4>
@@ -54,7 +54,7 @@ function Proizvodi({ lang }) {
               <h4 className="text-light text-center">
                 {lang.visecaKliznaVrata}
               </h4>
-              <img className="objFit" src={kVrata} alt="vikVrata" />
+              <img className="objFit" src={kVrata} alt="vrata" />
             </Link>
             <Link to="/galanterija" className="col-6 mt-4 hover prLink">
               <h4 className="text-light text-center">{lang.galanterija}</h4>
@@ -74,11 +74,11 @@ function Proizvodi({ lang }) {
             </Link>
             <Link to="/sahte" className="col-6 mt-4 hover prLink">
               <h4 className="text-light text-center">{lang.sahte}</h4>
-              <img className="objFit" src={sahte} alt="metalneSahte" />
+              <img className="objFit" src={sahte} alt="sahte" />
             </Link>
             <Link to="/bokseviZaPse" className="col-6 mt-4 hover prLink">
               <h4 className="text-light text-center">{lang.boksevi}</h4>
-              <img className="objFit" src={boksevi} alt="bokseviZaPse" />
+              <img className="objFit" src={boksevi} alt="boksevi" />
             </Link>
           </div>
         </div>

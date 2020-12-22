@@ -11,20 +11,19 @@ function Pocetna({ lang }) {
       <div className="row">
         <div className="col-10 offset-1">
           <h2 className="text-center text-light">{lang.podnaslov}</h2>
-          {/* <h4 className="tel">(+381) 064/24-87-845</h4> */}
         </div>
       </div>
       <div className="row mt-5">
         <div className="col-10 offset-1">
           <Carousel>
             <Carousel.Item interval={1000}>
-              <img className="d-block w-100" src={img1} alt="img1" />
+              <img className="d-block w-100" src={img1} alt="kapije" />
             </Carousel.Item>
             <Carousel.Item interval={1000}>
-              <img className="d-block w-100" src={img3} alt="img2" />
+              <img className="d-block w-100" src={img3} alt="rukohvati" />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-100" src={img2} alt="img3" />
+              <img className="d-block w-100" src={img2} alt="hale" />
             </Carousel.Item>
           </Carousel>
         </div>

@@ -14,7 +14,6 @@ function Onama({ lang }) {
         <div className="col-8 offset-2 mt-4">
           <h2 className="text-center text-light">Metaluniver Stojanovic</h2>
           <h4 className="text-center text-light">{lang.podnaslov}</h4>
-          {/* <h5 className="tel">(+381) 064/24-87-845</h5> */}
         </div>
       </div>
       <div className="row">
