@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Pocetna from "./components/Pocetna";
@@ -60,60 +60,62 @@ function App() {
         </div>
       </div>
       <Header lang={language} />
-      <Route path="/" exact>
-        <Pocetna lang={language} />
-      </Route>
-      <Route path="/onama">
-        <Onama lang={language} />
-      </Route>
-      <Route path="/proizvodi">
-        <Proizvodi lang={language} />
-      </Route>
-      <Route path="/kontakt">
-        <Kontakt lang={language} />
-      </Route>
-      <Route path="/ogradeIkapije">
-        <Ograde lang={language} />
-      </Route>
-      <Route path="/garaznaVrata">
-        <Vrata lang={language} />
-      </Route>
-      <Route path="/stepenista">
-        <Stepenista lang={language} />
-      </Route>
-      <Route path="/gelenderi">
-        <Gelenderi lang={language} />
-      </Route>
-      <Route path="/hale">
-        <Hale lang={language} />
-      </Route>
-      <Route path="/visecaKliznaVrata">
-        <VisecaKliznaVrata lang={language} />
-      </Route>
-      <Route path="/galanterija">
-        <Galanterija lang={language} />
-      </Route>
-      <Route path="/decijiProgram">
-        <DecijiProgram lang={language} />
-      </Route>
-      <Route path="/navoziRampe">
-        <Rampe lang={language} />
-      </Route>
-      <Route path="/palete">
-        <PaleteZaTransport lang={language} />
-      </Route>
-      <Route path="/nadstresnice">
-        <Nadstresnice lang={language} />
-      </Route>
-      <Route path="/zastitneResetke">
-        <Resetke lang={language} />
-      </Route>
-      <Route path="/sahte">
-        <Sahte lang={language} />
-      </Route>
-      <Route path="/bokseviZaPse">
-        <Boksevi lang={language} />
-      </Route>
+      <Switch>
+        <Route path="/" exact>
+          <Pocetna lang={language} />
+        </Route>
+        <Route path="/onama">
+          <Onama lang={language} />
+        </Route>
+        <Route path="/proizvodi">
+          <Proizvodi lang={language} />
+        </Route>
+        <Route path="/kontakt">
+          <Kontakt lang={language} />
+        </Route>
+        <Route path="/ogradeIkapije">
+          <Ograde lang={language} />
+        </Route>
+        <Route path="/garaznaVrata">
+          <Vrata lang={language} />
+        </Route>
+        <Route path="/stepenista">
+          <Stepenista lang={language} />
+        </Route>
+        <Route path="/gelenderi">
+          <Gelenderi lang={language} />
+        </Route>
+        <Route path="/hale">
+          <Hale lang={language} />
+        </Route>
+        <Route path="/visecaKliznaVrata">
+          <VisecaKliznaVrata lang={language} />
+        </Route>
+        <Route path="/galanterija">
+          <Galanterija lang={language} />
+        </Route>
+        <Route path="/decijiProgram">
+          <DecijiProgram lang={language} />
+        </Route>
+        <Route path="/navoziRampe">
+          <Rampe lang={language} />
+        </Route>
+        <Route path="/palete">
+          <PaleteZaTransport lang={language} />
+        </Route>
+        <Route path="/nadstresnice">
+          <Nadstresnice lang={language} />
+        </Route>
+        <Route path="/zastitneResetke">
+          <Resetke lang={language} />
+        </Route>
+        <Route path="/sahte">
+          <Sahte lang={language} />
+        </Route>
+        <Route path="/bokseviZaPse">
+          <Boksevi lang={language} />
+        </Route>
+      </Switch>
       <Footer lang={language} />
     </>
   );

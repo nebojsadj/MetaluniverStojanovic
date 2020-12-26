@@ -41,7 +41,7 @@ function Nadstresnice({ lang }) {
     <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-8 offset-2">
-          <h3 className="text-center text-light">{lang.nadstresnice}</h3>
+          <h3 className="text-center text-light m12">{lang.nadstresnice}</h3>
           <div className="row mt-4">
             {imgs.map((el, i) => (
               <div className="col-6 mt-4" key={i}>

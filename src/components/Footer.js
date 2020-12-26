@@ -11,7 +11,7 @@ function Footer({ lang }) {
           <ul className="footer">
             <li className="mt-4">
               <FiPhoneCall size="1.4em" color="cornflowerblue" />
-              <span className="ml-2">(+381) 64/24-87-845</span>
+              <span className="ml-2 m7">(+381) 64/24-87-845</span>
             </li>
             <li className="mt-2">
               <a
@@ -24,12 +24,11 @@ function Footer({ lang }) {
                   color="cornflowerblue"
                 />
               </a>
-              <span className="ml-2">{lang.email}</span>
+              <span className="ml-2 m7">{lang.email}</span>
             </li>
             <li className="mt-2">
               <FaViber size="1.5em" color="cornflowerblue" />
-
-              <span className="ml-2">{lang.viber}</span>
+              <span className="ml-2 m7">{lang.viber}</span>
             </li>
             <li className="mt-2">
               <a href="https://www.facebook.com/Metaluniver" target="blanc">
@@ -39,7 +38,7 @@ function Footer({ lang }) {
                   color="cornflowerblue"
                 />
               </a>
-              <span className="ml-2">{lang.fejsbuk}</span>
+              <span className="ml-2 m7">{lang.fejsbuk}</span>
             </li>
             <li className="mt-2">
               <a
@@ -52,7 +51,7 @@ function Footer({ lang }) {
                   color="cornflowerblue"
                 />
               </a>
-              <span className="ml-2">{lang.instagram}</span>
+              <span className="ml-2 m7">{lang.instagram}</span>
             </li>
           </ul>
         </div>
@@ -60,7 +59,7 @@ function Footer({ lang }) {
       <div className="row">
         <div className="col-10 offset-1">
           <hr />
-          <p className="text-light copy">
+          <p className="text-light copy m11">
             <span>&copy;</span> <span>{new Date().getFullYear()}</span>{" "}
             <span>Metaluniver Stojanovic</span>
           </p>
