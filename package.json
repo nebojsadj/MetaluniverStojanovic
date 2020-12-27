@@ -1,6 +1,6 @@
 {
     "name": "metal",
-    "homepage": "http://metaluniverstojanovic.rs",
+    "homepage": "https://metaluniverstojanovic.rs",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
