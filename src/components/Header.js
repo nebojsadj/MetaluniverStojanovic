@@ -15,7 +15,7 @@ function Header({ lang }) {
             width="120%"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="mBtn" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <NavLink to="/" exact className="d-inline p-2 text-light nav">

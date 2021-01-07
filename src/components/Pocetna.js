@@ -7,7 +7,7 @@ import { Carousel } from "react-bootstrap";
 function Pocetna({ lang }) {
   return (
     <div className="container-fluid mt-4">
-      <h1 className="text-center text-light">Metaluniver Stojanovic</h1>
+      <h1 className="text-center text-light mNsl">Metaluniver Stojanovic</h1>
       <div className="row">
         <div className="col-10 offset-1">
           <h2 className="text-center text-light m1">{lang.podnaslov}</h2>

@@ -134,15 +134,30 @@ hr {
     background-color: rgb(28, 28, 28) !important;
 }
 
-@media all and (max-width: 480px) {
-    h1 {
-        font-size: 26px;
+@media all and (max-width: 425px) {
+    .btns {
+        width: 32px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .mNsl {
+        font-size: 23px;
+    }
+    .mBtn {
+        width: 45px;
+        height: 36px;
+    }
+    .mBtn span {
+        width: 35px;
+        height: 35px;
+        margin-left: -7px;
+        margin-top: -4px;
     }
     .m1 {
-        font-size: 22px;
+        font-size: 21px;
     }
     .m2 {
-        font-size: 24px;
+        font-size: 22px;
     }
     .m3 {
         font-size: 20px;
@@ -161,80 +176,13 @@ hr {
         font-size: 20px;
     }
     .kontaktBtn {
-        font-size: 18px;
+        font-size: 16px;
     }
     .m7 {
-        font-size: 14px;
+        font-size: 12px;
     }
     .m8 {
         font-size: 17px;
-    }
-    .m9 {
-        font-size: 19px;
-    }
-    .m10 {
-        width: 310px;
-        height: 55px;
-    }
-    .m12 {
-        font-size: 21px;
-    }
-}
-
-@media all and (max-width: 440px) {
-    .m1 {
-        font-size: 21px;
-    }
-    .m2 {
-        font-size: 22px;
-    }
-    .m3 {
-        font-size: 19px;
-    }
-    .m5 {
-        font-size: 16px;
-    }
-    .m8 {
-        font-size: 15px;
-    }
-    .m4 {
-        width: 34px;
-        height: 34px;
-    }
-    .m9 {
-        font-size: 18px;
-    }
-    .m10 {
-        width: 270px;
-        height: 50px;
-    }
-    .m12 {
-        font-size: 19px;
-    }
-    .kontaktBtn {
-        font-size: 16px;
-    }
-}
-
-@media all and (max-width: 410px) {
-    .m1 {
-        font-size: 21px;
-    }
-    .m2 {
-        font-size: 21px;
-    }
-    .m3 {
-        font-size: 19px;
-    }
-    .m5 {
-        font-size: 16px;
-    }
-    .m8 {
-        font-size: 15px;
-    }
-    .m4 {
-        width: 34px;
-        height: 34px;
     }
     .m9 {
         font-size: 16px;
@@ -242,244 +190,140 @@ hr {
     .m10 {
         width: 270px;
         height: 50px;
-    }
-    .m11 {
-        font-size: 11px;
-    }
-    .m12 {
-        font-size: 19px;
-    }
-    .pSize {
-        font-size: 16px;
-    }
-    .kontaktBtn {
-        font-size: 16px;
-        line-height: 23px;
-    }
-}
-
-@media all and (max-width: 380px) {
-    .m1 {
-        font-size: 20px;
-    }
-    .m2 {
-        font-size: 20px;
-    }
-    .m3 {
-        font-size: 18px;
-    }
-    .m4 {
-        width: 32px;
-        height: 32px;
-    }
-    .m5 {
-        font-size: 15px;
-    }
-    .m6 {
-        font-size: 18px;
-    }
-    .m8 {
-        font-size: 14px;
-    }
-    .m9 {
-        font-size: 15px;
-    }
-    .m12 {
-        font-size: 18px;
-    }
-    .kontaktBtn {
-        font-size: 15px;
-    }
-    .m10 {
-        width: 220px;
-        height: 45px;
-    }
-    .m11 {
-        font-size: 11px;
-    }
-}
-
-@media all and (max-width: 362px) {
-    .m1 {
-        font-size: 19px;
-    }
-    .m2 {
-        font-size: 19px;
-    }
-    .m3 {
-        font-size: 17px;
-    }
-    .m4 {
-        width: 30px;
-        height: 30px;
-    }
-    .m5 {
-        font-size: 15px;
-    }
-    .m6 {
-        font-size: 17px;
-    }
-    .m8 {
-        font-size: 13px;
-    }
-    .m9 {
-        font-size: 14px;
-    }
-    .m12 {
-        font-size: 18px;
-    }
-    .kontaktBtn {
-        font-size: 14px;
-    }
-    .m10 {
-        width: 200px;
-        height: 45px;
     }
     .m11 {
         font-size: 10px;
     }
-}
-
-@media all and (max-device-width: 330px) {
-    .m1 {
-        font-size: 18px;
-    }
-    .m2 {
-        font-size: 18px;
-    }
-    .m3 {
-        font-size: 16px;
-    }
-    .m4 {
-        width: 28px;
-        height: 28px;
-    }
-    .pSize {
-        font-size: 14px;
-    }
-    .m5 {
-        font-size: 15px;
-    }
-    .m6 {
-        font-size: 16px;
-    }
-    .m7 {
-        font-size: 12px;
-    }
-    .m8 {
-        font-size: 13px;
-    }
     .m12 {
-        font-size: 17px;
-    }
-    .kontaktBtn {
-        font-size: 12px;
-        line-height: 25px;
-    }
-    .m9 {
-        font-size: 13px;
-    }
-    .m10 {
-        width: 190px;
-        height: 43px;
-    }
-    .m11 {
-        font-size: 9px;
+        font-size: 21px;
     }
 }
 
-@media all and (max-device-width: 320px) {
-    .m1 {
-        font-size: 18px;
-    }
-    .m2 {
-        font-size: 17px;
-    }
-    .m3 {
-        font-size: 16px;
-    }
-    .m4 {
-        width: 28px;
+@media all and (max-width: 375px) {
+    .btns {
+        width: 30px;
         height: 28px;
-    }
-    .pSize {
-        font-size: 14px;
-    }
-    .m5 {
-        font-size: 15px;
-    }
-    .m6 {
-        font-size: 16px;
-    }
-    .m7 {
-        font-size: 12px;
-    }
-    .m8 {
-        font-size: 13px;
-    }
-    .m12 {
-        font-size: 17px;
-    }
-    .kontaktBtn {
-        font-size: 12px;
-        line-height: 25px;
-    }
-    .m9 {
-        font-size: 13px;
-    }
-    .m10 {
-        width: 190px;
-        height: 43px;
-    }
-    .m11 {
-        font-size: 9px;
-    }
-}
-
-@media all and (max-device-width: 310px) {
-    .m1 {
-        font-size: 18px;
-    }
-    .m2 {
-        font-size: 17px;
-    }
-    .m3 {
-        font-size: 16px;
-    }
-    .m4 {
-        width: 28px;
-        height: 28px;
-    }
-    .pSize {
-        font-size: 15px;
-    }
-    .m5 {
-        font-size: 15px;
-    }
-    .m6 {
-        font-size: 17px;
-    }
-    .m7 {
-        font-size: 12px;
-    }
-    .m8 {
-        font-size: 13px;
-    }
-    .m12 {
-        font-size: 17px;
-    }
-    .kontaktBtn {
         font-size: 11px;
+    }
+    .mNsl {
+        font-size: 23px;
+    }
+    .mBtn {
+        width: 42px;
+        height: 33px;
+    }
+    .mBtn span {
+        width: 32px;
+        height: 32px;
+        margin-left: -7px;
+        margin-top: -4px;
+    }
+    .m1 {
+        font-size: 19px;
+    }
+    .m2 {
+        font-size: 21px;
+    }
+    .m3 {
+        font-size: 19px;
+    }
+    .m5 {
+        font-size: 16px;
+    }
+    .m7 {
+        font-size: 11px;
+    }
+    .m8 {
+        font-size: 15px;
+    }
+    .m4 {
+        width: 34px;
+        height: 34px;
+    }
+    .m9 {
+        font-size: 15px;
+    }
+    .m10 {
+        width: 240px;
+        height: 48px;
+    }
+    .m11 span {
+        font-size: 9px;
+    }
+    .m12 {
+        font-size: 19px;
+    }
+    .pSize {
+        font-size: 16px;
+    }
+    .kontaktBtn {
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .btns {
+        width: 28px;
+        height: 26px;
+        font-size: 10px;
+    }
+    .mNsl {
+        font-size: 21px;
+    }
+    .mBtn {
+        width: 40px;
+        height: 31px;
+    }
+    .mBtn span {
+        width: 30px;
+        height: 30px;
+        margin-left: -7px;
+        margin-top: -4px;
+    }
+    .m1 {
+        font-size: 18px;
+    }
+    .m2 {
+        font-size: 18px;
+    }
+    .m3 {
+        font-size: 16px;
+    }
+    .m4 {
+        width: 28px;
+        height: 28px;
+    }
+    .pSize {
+        font-size: 14px;
+    }
+    .m5 {
+        font-size: 14px;
+    }
+    .m6 {
+        font-size: 16px;
+    }
+    .m7 {
+        font-size: 10px;
+    }
+    .m8 {
+        font-size: 13px;
+    }
+    .m12 {
+        font-size: 17px;
+    }
+    .kontaktBtn {
+        font-size: 12px;
         line-height: 25px;
     }
     .m9 {
         font-size: 13px;
     }
     .m10 {
-        width: 190px;
+        width: 200px;
         height: 43px;
     }
-    .m11 {
-        font-size: 9px;
+    .m11 span {
+        font-size: 8px;
     }
 }
