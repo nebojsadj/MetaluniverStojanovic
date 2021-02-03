@@ -1,329 +1,338 @@
 body {
-    background-color: rgba(41, 71, 116, 0.863);
+  background-color: rgba(41, 71, 116, 0.863);
 }
 
 .bg {
-    background-color: rgba(65, 94, 138, 0.863);
+  background-color: rgba(65, 94, 138, 0.863);
 }
 
 .sp {
-    color: rgba(23, 38, 59, 0.863);
+  color: rgba(23, 38, 59, 0.863);
 }
 
 .active {
-    border-bottom: 1px solid red;
+  border-bottom: 1px solid red;
 }
-
+.carousel-item {
+  border-bottom: none !important;
+}
 a:hover {
-    text-decoration: none;
-    background-color: transparent !important;
+  text-decoration: none;
+  background-color: transparent !important;
 }
 
-.carousel-item img {
-    height: 25vmax;
+.carImg {
+  height: 400px;
 }
 
 .margine {
-    margin: 0 auto !important;
+  margin: 0 auto !important;
 }
 
 .footer {
-    list-style: none;
-    color: white;
+  list-style: none;
+  color: white;
 }
 
 .social:hover {
-    cursor: pointer;
-}
-
-.footerLista {
-    width: 330px;
-    height: 180px;
-    border: 1px solid none;
-    margin: auto;
+  cursor: pointer;
 }
 
 hr {
-    border: 1px solid rgb(110, 108, 108);
+  border: 1px solid rgb(110, 108, 108);
 }
 
 .copy {
-    font-size: small;
-    text-align: center;
+  font-size: small;
+  text-align: center;
 }
 
 .podLogo {
-    margin-left: 45%;
+  margin-left: 45%;
 }
 
 .logoMargin {
-    margin: 0 auto !important;
+  margin: 0 auto !important;
 }
 
 .hover:hover {
-    /* border: 1px solid transparent; */
-    opacity: 0.7;
-    /* color: red; */
+  opacity: 0.7;
 }
 
 .objFit {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
 .iframe {
-    height: 250px;
-    margin-top: 5%;
+  height: 250px;
+  margin-top: 5%;
 }
 
 .kontaktIkonice:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .pSize {
-    font-size: larger;
+  font-size: larger;
 }
 
 .tel {
-    width: 260px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border: 1px solid none;
-    background-color: rgba(40, 66, 102, 0.863);
-    color: white;
-    margin: auto;
-    margin-top: 2%;
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid none;
+  background-color: rgba(40, 66, 102, 0.863);
+  color: white;
+  margin: auto;
+  margin-top: 2%;
 }
 
 .btns {
-    border-radius: 50%;
-    background: transparent;
-    transition: all 0.3s ease 0s;
-    margin-bottom: 3px;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 3px;
 }
 
 .red {
-    border: 2px solid red !important;
-}
-
-.carousel {
-    height: 60vh !important;
-    object-fit: fill;
+  border: 2px solid red !important;
 }
 
 .carouselControl {
-    width: 2em !important;
-    height: 2em !important;
-    border: 2px solid red !important;
-    border-radius: 50%;
-    background-color: rgba(26, 46, 73, 0.863) !important;
+  width: 2em !important;
+  height: 2em !important;
+  border: 2px solid red !important;
+  border-radius: 50%;
+  background-color: rgba(26, 46, 73, 0.863) !important;
 }
 
 .nav {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .prLink {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .kontHov:hover {
-    background-color: rgb(28, 28, 28) !important;
+  background-color: rgb(28, 28, 28) !important;
 }
 
 @media all and (max-width: 425px) {
-    .btns {
-        width: 32px;
-        height: 30px;
-        font-size: 12px;
-    }
-    .mNsl {
-        font-size: 23px;
-    }
-    .mBtn {
-        width: 45px;
-        height: 36px;
-    }
-    .mBtn span {
-        width: 35px;
-        height: 35px;
-        margin-left: -7px;
-        margin-top: -4px;
-    }
-    .m1 {
-        font-size: 21px;
-    }
-    .m2 {
-        font-size: 22px;
-    }
-    .m3 {
-        font-size: 20px;
-    }
-    .m4 {
-        width: 36px;
-        height: 36px;
-    }
-    .pSize {
-        font-size: 17px;
-    }
-    .m5 {
-        font-size: 18px;
-    }
-    .m6 {
-        font-size: 20px;
-    }
-    .kontaktBtn {
-        font-size: 16px;
-    }
-    .m7 {
-        font-size: 12px;
-    }
-    .m8 {
-        font-size: 17px;
-    }
-    .m9 {
-        font-size: 16px;
-    }
-    .m10 {
-        width: 270px;
-        height: 50px;
-    }
-    .m11 {
-        font-size: 10px;
-    }
-    .m12 {
-        font-size: 21px;
-    }
+  .nav {
+    text-align: center;
+  }
+  .carImg {
+    height: 250px;
+  }
+  .carModal {
+    height: 400px;
+  }
+  .btns {
+    width: 32px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .mNsl {
+    font-size: 23px;
+  }
+  .mBtn {
+    width: 45px;
+    height: 36px;
+  }
+  .mBtn span {
+    width: 35px;
+    height: 35px;
+    margin-left: -7px;
+    margin-top: -4px;
+  }
+  .m1 {
+    font-size: 21px;
+  }
+  .m2 {
+    font-size: 22px;
+  }
+  .m3 {
+    font-size: 20px;
+  }
+  .m4 {
+    width: 36px;
+    height: 36px;
+  }
+  .pSize {
+    font-size: 17px;
+  }
+  .m5 {
+    font-size: 18px;
+  }
+  .m6 {
+    font-size: 20px;
+  }
+  .kontaktBtn {
+    font-size: 16px;
+  }
+  .m7 {
+    font-size: 12px;
+  }
+  .m8 {
+    font-size: 17px;
+  }
+  .m9 {
+    font-size: 16px;
+  }
+  .m10 {
+    width: 270px;
+    height: 50px;
+  }
+  .m11 {
+    font-size: 10px;
+  }
+  .m12 {
+    font-size: 21px;
+  }
 }
 
 @media all and (max-width: 375px) {
-    .btns {
-        width: 30px;
-        height: 28px;
-        font-size: 11px;
-    }
-    .mNsl {
-        font-size: 23px;
-    }
-    .mBtn {
-        width: 42px;
-        height: 33px;
-    }
-    .mBtn span {
-        width: 32px;
-        height: 32px;
-        margin-left: -7px;
-        margin-top: -4px;
-    }
-    .m1 {
-        font-size: 19px;
-    }
-    .m2 {
-        font-size: 21px;
-    }
-    .m3 {
-        font-size: 19px;
-    }
-    .m5 {
-        font-size: 16px;
-    }
-    .m7 {
-        font-size: 11px;
-    }
-    .m8 {
-        font-size: 15px;
-    }
-    .m4 {
-        width: 34px;
-        height: 34px;
-    }
-    .m9 {
-        font-size: 15px;
-    }
-    .m10 {
-        width: 240px;
-        height: 48px;
-    }
-    .m11 span {
-        font-size: 9px;
-    }
-    .m12 {
-        font-size: 19px;
-    }
-    .pSize {
-        font-size: 16px;
-    }
-    .kontaktBtn {
-        font-size: 15px;
-        line-height: 23px;
-    }
+  .carImg {
+    height: 220px;
+  }
+  .carModal {
+    height: 400px;
+  }
+  .btns {
+    width: 30px;
+    height: 28px;
+    font-size: 11px;
+  }
+  .mNsl {
+    font-size: 23px;
+  }
+  .mBtn {
+    width: 42px;
+    height: 33px;
+  }
+  .mBtn span {
+    width: 32px;
+    height: 32px;
+    margin-left: -7px;
+    margin-top: -4px;
+  }
+  .m1 {
+    font-size: 19px;
+  }
+  .m2 {
+    font-size: 21px;
+  }
+  .m3 {
+    font-size: 19px;
+  }
+  .m5 {
+    font-size: 16px;
+  }
+  .m7 {
+    font-size: 11px;
+  }
+  .m8 {
+    font-size: 15px;
+  }
+  .m4 {
+    width: 34px;
+    height: 34px;
+  }
+  .m9 {
+    font-size: 15px;
+  }
+  .m10 {
+    width: 240px;
+    height: 48px;
+  }
+  .m11 span {
+    font-size: 9px;
+  }
+  .m12 {
+    font-size: 19px;
+  }
+  .pSize {
+    font-size: 16px;
+  }
+  .kontaktBtn {
+    font-size: 15px;
+    line-height: 23px;
+  }
 }
 
 @media all and (max-width: 320px) {
-    .btns {
-        width: 28px;
-        height: 26px;
-        font-size: 10px;
-    }
-    .mNsl {
-        font-size: 21px;
-    }
-    .mBtn {
-        width: 40px;
-        height: 31px;
-    }
-    .mBtn span {
-        width: 30px;
-        height: 30px;
-        margin-left: -7px;
-        margin-top: -4px;
-    }
-    .m1 {
-        font-size: 18px;
-    }
-    .m2 {
-        font-size: 18px;
-    }
-    .m3 {
-        font-size: 16px;
-    }
-    .m4 {
-        width: 28px;
-        height: 28px;
-    }
-    .pSize {
-        font-size: 14px;
-    }
-    .m5 {
-        font-size: 14px;
-    }
-    .m6 {
-        font-size: 16px;
-    }
-    .m7 {
-        font-size: 10px;
-    }
-    .m8 {
-        font-size: 13px;
-    }
-    .m12 {
-        font-size: 17px;
-    }
-    .kontaktBtn {
-        font-size: 12px;
-        line-height: 25px;
-    }
-    .m9 {
-        font-size: 13px;
-    }
-    .m10 {
-        width: 200px;
-        height: 43px;
-    }
-    .m11 span {
-        font-size: 8px;
-    }
+  .carImg {
+    height: 180px;
+  }
+  .carModal {
+    height: 400px;
+  }
+  .btns {
+    width: 28px;
+    height: 26px;
+    font-size: 10px;
+  }
+  .mNsl {
+    font-size: 21px;
+  }
+  .mBtn {
+    width: 40px;
+    height: 31px;
+  }
+  .mBtn span {
+    width: 30px;
+    height: 30px;
+    margin-left: -7px;
+    margin-top: -4px;
+  }
+  .m1 {
+    font-size: 18px;
+  }
+  .m2 {
+    font-size: 18px;
+  }
+  .m3 {
+    font-size: 16px;
+  }
+  .m4 {
+    width: 28px;
+    height: 28px;
+  }
+  .pSize {
+    font-size: 14px;
+  }
+  .m5 {
+    font-size: 14px;
+  }
+  .m6 {
+    font-size: 16px;
+  }
+  .m7 {
+    font-size: 10px;
+  }
+  .m8 {
+    font-size: 13px;
+  }
+  .m12 {
+    font-size: 17px;
+  }
+  .kontaktBtn {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .m9 {
+    font-size: 13px;
+  }
+  .m10 {
+    width: 200px;
+    height: 43px;
+  }
+  .m11 span {
+    font-size: 8px;
+  }
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { Col, Container, Row } from "react-bootstrap";
 
 function KontaktForma({ lang }) {
   const [valid, setValid] = useState({
@@ -49,9 +50,9 @@ function KontaktForma({ lang }) {
   }
 
   return (
-    <div className="container mb-5">
-      <div className="row">
-        <div className="col-8 offset-2">
+    <Container className="mb-5">
+      <Row>
+        <Col md={{ span: 8, offset: 2 }} xs={{ span: 10, offset: 1 }}>
           <form className="contact-form" onSubmit={sendEmail}>
             <input
               autoComplete="off"
@@ -97,9 +98,9 @@ function KontaktForma({ lang }) {
             <br />
           </form>
           <h3 className="text-white text-center mt-3">{success}</h3>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 export default KontaktForma;

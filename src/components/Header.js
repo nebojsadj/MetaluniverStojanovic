@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Image } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logo from "../pict/logo/MSlogo.png";
 
@@ -8,7 +8,7 @@ function Header({ lang }) {
     <>
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
         <Navbar.Brand href="/">
-          <img
+          <Image
             src={logo}
             alt="metaluniver"
             className="mt-3 ml-1 m10"

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaEnvelope, FaViber, FaInstagram } from "react-icons/fa";
 import KontaktForma from "./KontaktForma";
@@ -10,11 +11,15 @@ function Kontakt({ lang }) {
   const target = useRef(null);
 
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-10 offset-1">
-          <div className="row">
-            <div className="col-8 offset-2 text-light text-center m1">
+    <Container className="mt-5">
+      <Row>
+        <Col md={{ span: 10, offset: 1 }} xs={{ span: 12, offset: 0 }}>
+          <Row>
+            <Col
+              md={{ span: 8, offset: 2 }}
+              xs={{ span: 10, offset: 1 }}
+              className="text-light text-center m1"
+            >
               <h2 className="m2">{lang.kontaktirajteNas}</h2>
               <h4 className="mt-4 text text-uppercase m5">{lang.odgovoriti}</h4>
               <hr />
@@ -32,8 +37,12 @@ function Kontakt({ lang }) {
                   <h5 className="m8">{lang._email}</h5>
                 </li>
               </ul>
-            </div>
-            <div className="col-10 offset-1 text-light text-center mt-4">
+            </Col>
+            <Col
+              md={{ span: 10, offset: 1 }}
+              xs={{ span: 12, offset: 0 }}
+              className="text-light text-center mt-4"
+            >
               <span className="kontaktIkonice">
                 <a href="https://www.facebook.com/Metaluniver" target="blanc">
                   <AiFillFacebook size="3em" color="white" className="m4" />
@@ -69,24 +78,28 @@ function Kontakt({ lang }) {
                   <FaEnvelope size="2.8em" color="white" className="m4" />
                 </a>
               </span>
-            </div>
-          </div>
-          <div className="row mt-4">
+            </Col>
+          </Row>
+          <Row className="mt-4">
             <Mapa />
-          </div>
-          <div className="row">
-            <div className="col-8 offset-2 mt-5 text-light text-center">
+          </Row>
+          <Row>
+            <Col
+              md={{ span: 8, offset: 2 }}
+              xs={{ span: 10, offset: 1 }}
+              className="mt-5 text-light text-center"
+            >
               <h3 className="mt-3 text-uppercase m5">{lang.unikat}</h3>
               <h3 className=" text-uppercase mt-5 m5">{lang._kontakt}</h3>
               <hr />
-            </div>
-          </div>
-          <div className="row">
+            </Col>
+          </Row>
+          <Row>
             <KontaktForma lang={lang} />
-          </div>
-        </div>
-      </div>
-    </div>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

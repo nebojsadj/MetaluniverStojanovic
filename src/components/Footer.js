@@ -2,12 +2,13 @@ import React from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaEnvelope, FaViber, FaInstagram } from "react-icons/fa";
+import { Col, Container, Row } from "react-bootstrap";
 
 function Footer({ lang }) {
   return (
-    <div className="container-fluid mt-4 bg-dark">
-      <div className="row">
-        <div className="footerLista">
+    <Container fluid className="mt-4 bg-dark">
+      <Row>
+        <Col className="d-flex justify-content-center">
           <ul className="footer">
             <li className="mt-4">
               <FiPhoneCall size="1.4em" color="cornflowerblue" />
@@ -54,18 +55,18 @@ function Footer({ lang }) {
               <span className="ml-2 m7">{lang.instagram}</span>
             </li>
           </ul>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-10 offset-1">
+        </Col>
+      </Row>
+      <Row>
+        <Col md={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
           <hr />
           <p className="text-light copy m11">
             <span>&copy;</span> <span>{new Date().getFullYear()}</span>{" "}
             <span>Metaluniver Stojanovic</span>
           </p>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

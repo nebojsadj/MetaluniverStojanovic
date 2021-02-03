@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { Carousel } from "react-bootstrap";
 import img1 from "../../pict/ogradeKapije/1.jpg";
@@ -66,14 +67,14 @@ function Ograde({ lang }) {
   ];
 
   return (
-    <div className="container mt-5 mb-5">
-      <div className="row">
-        <div className="col-8 offset-2">
+    <Container className="mt-5 mb-5">
+      <Row>
+        <Col md={{ span: 8, offset: 2 }} xs={{ span: 10, offset: 1 }}>
           <h3 className="text-center text-light m12">{lang.ogradeKapije}</h3>
-          <div className="row mt-4">
+          <Row className="mt-4">
             {imgs.map((el, i) => (
-              <div className="col-6 mt-4" key={i}>
-                <img
+              <Col md={{ span: 6 }} className="mt-4" key={i}>
+                <Image
                   onClick={() => {
                     setLgShow(true);
                     setIndex(i);
@@ -82,51 +83,59 @@ function Ograde({ lang }) {
                   src={el}
                   alt={el}
                 />
-              </div>
+              </Col>
             ))}
-          </div>
-        </div>
-      </div>
-      <Modal
-        size="xl"
-        show={lgShow}
-        onHide={() => setLgShow(false)}
-        aria-labelledby="example-modal-sizes-title-xl"
-        centered
-      >
-        <Modal.Header closeButton></Modal.Header>
-        <Carousel
-          activeIndex={index}
-          onSelect={handleSelect}
-          touch={true}
-          fade={true}
-          prevIcon={
-            <span
-              aria-hidden="true"
-              className="carousel-control-prev-icon carouselControl"
-            />
-          }
-          nextIcon={
-            <span
-              aria-hidden="true"
-              className="carousel-control-next-icon carouselControl"
-            />
-          }
-        >
-          {imgs.map((el) => (
-            <Carousel.Item key={el}>
-              <div className="container">
-                <div className="row">
-                  <div className="col-12">
-                    <img className="d-block w-100 carousel" src={el} alt={el} />
-                  </div>
-                </div>
-              </div>
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </Modal>
-    </div>
+          </Row>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={{ span: 8, offset: 2 }}>
+          <Modal
+            size="xl"
+            show={lgShow}
+            onHide={() => setLgShow(false)}
+            aria-labelledby="example-modal-sizes-title-xl"
+            centered
+          >
+            <Modal.Header closeButton></Modal.Header>
+            <Carousel
+              activeIndex={index}
+              onSelect={handleSelect}
+              touch={true}
+              fade={true}
+              prevIcon={
+                <span
+                  aria-hidden="true"
+                  className="carousel-control-prev-icon carouselControl"
+                />
+              }
+              nextIcon={
+                <span
+                  aria-hidden="true"
+                  className="carousel-control-next-icon carouselControl"
+                />
+              }
+            >
+              {imgs.map((el) => (
+                <Carousel.Item key={el}>
+                  <Container>
+                    <Row>
+                      <Col>
+                        <Image
+                          className="d-block w-100 carModal"
+                          src={el}
+                          alt={el}
+                        />
+                      </Col>
+                    </Row>
+                  </Container>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </Modal>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

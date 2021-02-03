@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { Carousel } from "react-bootstrap";
 import img1 from "../../pict/navoziRampe/1.png";
@@ -22,14 +23,14 @@ function Rampe({ lang }) {
   const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
   return (
-    <div className="container mt-5 mb-5">
-      <div className="row">
-        <div className="col-8 offset-2">
+    <Container className="mt-5 mb-5">
+      <Row>
+        <Col md={{ span: 8, offset: 2 }} xs={{ span: 10, offset: 1 }}>
           <h3 className="text-center text-light m12">{lang.navoziRampe}</h3>
-          <div className="row mt-4">
+          <Row className="mt-4">
             {imgs.map((el, i) => (
-              <div className="col-6 mt-4" key={i}>
-                <img
+              <Col md={{ span: 6 }} className="mt-4" key={i}>
+                <Image
                   onClick={() => {
                     setLgShow(true);
                     setIndex(i);
@@ -38,11 +39,11 @@ function Rampe({ lang }) {
                   src={el}
                   alt={el}
                 />
-              </div>
+              </Col>
             ))}
-          </div>
-        </div>
-      </div>
+          </Row>
+        </Col>
+      </Row>
       <Modal
         size="xl"
         show={lgShow}
@@ -71,18 +72,22 @@ function Rampe({ lang }) {
         >
           {imgs.map((el) => (
             <Carousel.Item key={el}>
-              <div className="container">
-                <div className="row">
-                  <div className="col-12">
-                    <img className="d-block w-100 carousel" src={el} alt={el} />
-                  </div>
-                </div>
-              </div>
+              <Container>
+                <Row>
+                  <Col>
+                    <Image
+                      className="d-block w-100 carModal"
+                      src={el}
+                      alt={el}
+                    />
+                  </Col>
+                </Row>
+              </Container>
             </Carousel.Item>
           ))}
         </Carousel>
       </Modal>
-    </div>
+    </Container>
   );
 }
 
