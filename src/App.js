@@ -3,9 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Pocetna from "./components/Pocetna";
-import Onama from "./components/Onama";
 import Proizvodi from "./components/Proizvodi";
-import Kontakt from "./components/Kontakt";
+import Kontakt from "./components/Kontakt/Kontakt";
 import Ograde from "./components/Kategorije/Ograde";
 import Vrata from "./components/Kategorije/Vrata";
 import Stepenista from "./components/Kategorije/Stepenista";
@@ -24,6 +23,7 @@ import { langSR } from "./components/Jezici";
 import { langEN } from "./components/Jezici";
 import { langFR } from "./components/Jezici";
 import SkrolujNaVrh from "./components/SkrolujNaVrh";
+import { Col, Container, Row, Button } from "react-bootstrap";
 
 function App() {
   const [language, setLanguage] = useState(langSR);
@@ -35,37 +35,37 @@ function App() {
   return (
     <>
       <SkrolujNaVrh />
-      <div className="container-fluid bg-dark">
-        <div className="row">
-          <div className="col-12 mb-1">
-            <button
+      <Container fluid className="bg-dark">
+        <Row>
+          <Col className="mb-1">
+            <Button
+              variant="outline-light"
               onClick={() => changeLanguage(langFR)}
-              className="btn btn-outline-light btn-sm mt-3 ml-2 float-right btns"
+              className="btn-sm mt-3 ml-2 float-right btns"
             >
               FR
-            </button>
-            <button
+            </Button>
+            <Button
+              variant="outline-primary"
               onClick={() => changeLanguage(langEN)}
-              className="btn btn-outline-primary btn-sm mt-3 ml-2 float-right btns"
+              className="btn-sm mt-3 ml-2 float-right btns"
             >
               EN
-            </button>
-            <button
+            </Button>
+            <Button
+              variant="outline-danger"
               onClick={() => changeLanguage(langSR)}
-              className="btn btn-outline-danger btn-sm mt-3 ml-2 float-right btns"
+              className="btn-sm mt-3 ml-2 float-right btns"
             >
               SR
-            </button>
-          </div>
-        </div>
-      </div>
+            </Button>
+          </Col>
+        </Row>
+      </Container>
       <Header lang={language} />
       <Switch>
         <Route path="/" exact>
           <Pocetna lang={language} />
-        </Route>
-        <Route path="/onama">
-          <Onama lang={language} />
         </Route>
         <Route path="/proizvodi">
           <Proizvodi lang={language} />

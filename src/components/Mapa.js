@@ -11,7 +11,7 @@ function Mapa() {
   return (
     <Col
       md={{ span: 8, offset: 2 }}
-      xs={{ span: 10, offset: 1 }}
+      xs={{ span: 12, offset: 0 }}
       className="iframe"
       dangerouslySetInnerHTML={{ __html: iframe ? iframe : "" }}
     />

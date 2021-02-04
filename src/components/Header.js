@@ -21,9 +21,6 @@ function Header({ lang }) {
             <NavLink to="/" exact className="d-inline p-2 text-light nav">
               {lang.navPocetna}
             </NavLink>
-            <NavLink to="/onama" className="d-inline p-2 text-light nav">
-              {lang.navOnama}
-            </NavLink>
             <NavLink to="/proizvodi" className="d-inline p-2 text-light nav">
               {lang.navProizvodi}
             </NavLink>

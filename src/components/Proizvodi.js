@@ -17,76 +17,38 @@ import boksevi from "../pict/naslovne/14.jpg";
 import { Col, Container, Row, Image } from "react-bootstrap";
 
 function Proizvodi({ lang }) {
+  const proizvodi = [
+    { name: "/ogradeIkapije", lang: lang.ogradeKapije, img: kapije },
+    { name: "/garaznaVrata", lang: lang.garaznaVrata, img: vrata },
+    { name: "/stepenista", lang: lang.stepenista, img: stepenista },
+    { name: "/nadstresnice", lang: lang.nadstresnice, img: nadstresnice },
+    { name: "/gelenderi", lang: lang.gelenderi, img: gelenderi },
+    { name: "/hale", lang: lang.hale, img: hale },
+    { name: "/zastitneResetke", lang: lang.zastitneResetke, img: resetke },
+    { name: "/visecaKliznaVrata", lang: lang.visecaKliznaVrata, img: kVrata },
+    { name: "/galanterija", lang: lang.galanterija, img: galanterija },
+    { name: "/decijiProgram", lang: lang.decijiProgram, img: dProgram },
+    { name: "/palete", lang: lang.palete, img: palete },
+    { name: "/navoziRampe", lang: lang.navoziRampe, img: navozi },
+    { name: "/sahte", lang: lang.sahte, img: sahte },
+    { name: "/bokseviZaPse", lang: lang.boksevi, img: boksevi },
+  ];
   return (
     <Container className="mt-5 mb-5">
       <Row>
         <Col md={{ span: 8, offset: 2 }} xs={{ span: 12 }}>
-          <h2 className="text-center text-light m1">{lang.kategorije}</h2>
+          <h3 className="text-center text-light m1">{lang.kategorije}</h3>
           <Row className="mt-4">
-            <Link to="/ogradeIkapije" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.ogradeKapije}</h4>
-              <Image className="objFit" src={kapije} alt="kapije" />
-            </Link>
-            <Link to="/garaznaVrata" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">
-                {lang.garaznaVrata}{" "}
-              </h4>
-              <Image className="objFit" src={vrata} alt="vrata" />
-            </Link>
-            <Link to="/stepenista" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.stepenista}</h4>
-              <Image className="objFit" src={stepenista} alt="stepenista" />
-            </Link>
-            <Link to="/nadstresnice" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.nadstresnice}</h4>
-              <Image className="objFit" src={nadstresnice} alt="nadstresnice" />
-            </Link>
-            <Link to="/gelenderi" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.gelenderi}</h4>
-              <Image className="objFit" src={gelenderi} alt="gelenderi" />
-            </Link>
-            <Link to="/hale" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.hale}</h4>
-              <Image className="objFit" src={hale} alt="hale" />
-            </Link>
-            <Link to="/zastitneResetke" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">
-                {lang.zastitneResetke}
-              </h4>
-              <Image className="objFit" src={resetke} alt="zastitneResetke" />
-            </Link>
-            <Link to="/visecaKliznaVrata" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">
-                {lang.visecaKliznaVrata}
-              </h4>
-              <Image className="objFit" src={kVrata} alt="vrata" />
-            </Link>
-            <Link to="/galanterija" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.galanterija}</h4>
-              <Image className="objFit" src={galanterija} alt="galanterija" />
-            </Link>
-            <Link to="/decijiProgram" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">
-                {lang.decijiProgram}
-              </h4>
-              <Image className="objFit" src={dProgram} alt="decijiProgram" />
-            </Link>
-            <Link to="/palete" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.palete}</h4>
-              <Image className="objFit" src={palete} alt="paleteZaTransport" />
-            </Link>
-            <Link to="/navoziRampe" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.navoziRampe}</h4>
-              <Image className="objFit" src={navozi} alt="navoziRampe" />
-            </Link>
-            <Link to="/sahte" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.sahte}</h4>
-              <Image className="objFit" src={sahte} alt="sahte" />
-            </Link>
-            <Link to="/bokseviZaPse" className="col-6 mt-4 hover prLink">
-              <h4 className="text-light text-center m9">{lang.boksevi}</h4>
-              <Image className="objFit" src={boksevi} alt="boksevi" />
-            </Link>
+            {proizvodi.map((el) => (
+              <Link
+                to={el.name}
+                className="col-6 mt-4 hover prLink"
+                key={el.img}
+              >
+                <h4 className="text-light text-center m9">{el.lang}</h4>
+                <Image className="objFit" src={el.img} alt={el.img} />
+              </Link>
+            ))}
           </Row>
         </Col>
       </Row>

@@ -9,7 +9,7 @@ function Footer({ lang }) {
     <Container fluid className="mt-4 bg-dark">
       <Row>
         <Col className="d-flex justify-content-center">
-          <ul className="footer">
+          <ul className="footer mt-2">
             <li className="mt-4">
               <FiPhoneCall size="1.4em" color="cornflowerblue" />
               <span className="ml-2 m7">(+381) 64/24-87-845</span>
@@ -63,6 +63,9 @@ function Footer({ lang }) {
           <p className="text-light copy m11">
             <span>&copy;</span> <span>{new Date().getFullYear()}</span>{" "}
             <span>Metaluniver Stojanovic</span>
+          </p>
+          <p className="text-light copy m11">
+            Design and development by DjordjevicN
           </p>
         </Col>
       </Row>

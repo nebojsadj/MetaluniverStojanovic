@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Carousel } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
-import { Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import img1 from "../../pict/gelenderi/1.jpg";
 import img2 from "../../pict/gelenderi/2.jpg";
 import img3 from "../../pict/gelenderi/3.jpg";
@@ -129,6 +129,16 @@ function Gelenderi({ lang }) {
           ))}
         </Carousel>
       </Modal>
+      <Row>
+        <Col md={{ span: 4, offset: 4 }} xs={{ span: 6, offset: 3 }}>
+          <Link
+            to="/kontakt"
+            className="btn btn-dark mt-4 form-control kontHov"
+          >
+            <h5 className="kontaktBtn">{lang.kontaktirajteNas}</h5>
+          </Link>
+        </Col>
+      </Row>
     </Container>
   );
 }
